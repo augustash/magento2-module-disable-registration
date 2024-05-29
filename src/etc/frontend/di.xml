@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * August Ash Disable Customer Registration Module
+ *
+ * A simple module to disable frontend customer registration.
+ *
+ * @author Peter McWilliams <pmcwilliams@augustash.com>
+ * @license MIT
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Model\Registration">
+        <plugin name="augustash_disable_customer_registration" type="Augustash\DisableRegistration\Plugin\DisableRegistrationPlugin" sortOrder="10" disabled="false"/>
+    </type>
+</config>
